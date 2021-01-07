@@ -188,7 +188,7 @@ body {
 }
 
 .teamLowgos {
-  position: absolute;
+  position: sticky;
   width: 100%;
   display: flex;
   flex-direction: row;

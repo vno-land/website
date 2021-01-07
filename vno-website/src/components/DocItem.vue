@@ -36,7 +36,7 @@ export default {
   margin-top: 55px;
   min-height: fit-content;
   width: 25vw;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 500px;
   animation: glowing 3000ms infinite;
 }
@@ -62,6 +62,7 @@ export default {
 .desc {
   width: 40vw;
   min-height: fit-content;
+  min-width: 250px;
   max-width: 500px;
   text-align: justify;
   margin: 25px;
