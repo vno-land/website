@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <img id="vnoLogo" src="/assets/vnoLogo.png" />
+    <a href="https://github.com/oslabs-beta/vno">
+      <img id="vnoLogo" src="/assets/vnoLogo.png" />
+    </a>
     <h1>A Vue / Deno Adapter</h1>
     <br />
     <div class="logos">
@@ -11,16 +13,6 @@
         <img id="denoLogo" src="/assets/deno-logo.png"
       /></a>
     </div>
-    <!-- <h3 id="cliText">CLI Plugin</h3>
-    <a
-      class="docTags"
-      href="https://github.com/oslabs-beta/vno/tree/main/command-line"
-      target="_blank"
-      rel="noopener"
-      >Click Here</a
-    >
-
-    <br /> -->
   </div>
 </template>
 <script>
@@ -39,7 +31,7 @@ a:link {
 .logos {
   display: flex;
   justify-content: center;
-  padding: 24px;
+  padding: 16px;
 }
 .home h1 {
   padding-top: 16px;
@@ -51,7 +43,8 @@ a:link {
   margin-left: 0.4rem;
 }
 #vnoLogo {
-  max-width: 80%;
+  margin-top: 4.5rem;
+  max-width: 50%;
 }
 #logoText {
   justify-content: center;

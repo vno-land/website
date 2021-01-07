@@ -25,7 +25,18 @@
           :linkedIn="person.linkedIn"
         />
       </div>
+      <div class="teamBottom">
+        <div class="teamLowgos">
+          <a href="https://github.com/oslabs-beta/vno" class="linkies"
+            ><img id="gitLogo" class="logo" src="/assets/git-logo.png"
+          /></a>
+          <a href="https://deno.land/x/vno" class="linkies"
+            ><img id="denoLogo" class="logo" src="/assets/deno-logo.png"
+          /></a>
+        </div>
+      </div>
     </div>
+
     <div v-else-if="displayedComponent === 'Docs'">
       <Docs />
     </div>
@@ -98,7 +109,9 @@ export default {
 
 <style>
 @import url('https://db.onlinewebfonts.com/c/6d253426005e3fdcd9f69455050bd7d7?family=Chalet-NewYorkNineteenSixty');
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #203a42;
   margin: 0;
@@ -114,19 +127,18 @@ body {
 }
 
 #meetTeam {
-  font-size: 6rem;
+  font-size: 9vw;
 }
 
 .nav {
   box-shadow: 0px 0px 10px 0px #132429;
-  padding: 20px;
+  padding: 20px 6vw;
   margin: 0;
   background-color: #1a3037;
   list-style-type: none;
   display: flex;
   color: white;
-  justify-content: space-around;
-  margin-bottom: 4.5rem;
+  justify-content: space-between;
 }
 .nav li {
   color: white;
@@ -146,6 +158,7 @@ body {
   text-decoration: none;
 }
 #app {
+  height: fit-content;
   display: flex;
   flex-direction: column;
   font-family: Chalet-NewYorkNineteenSixty, Avenir, Helvetica, Arial, sans-serif;
@@ -174,4 +187,14 @@ body {
   z-index: -5;
 }
 
+.teamLowgos {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #15131342;
+  bottom: 0;
+  padding: 10px 0 6px;
+}
 </style>

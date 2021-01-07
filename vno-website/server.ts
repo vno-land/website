@@ -1,8 +1,7 @@
 import { Application, join, log, send } from "./deps.ts";
 
-
-const port = Number(Deno.env.get("PORT")) || 8080;
-const hostname = "0.0.0.0"
+const port: any = Deno.env.get("PORT") || 3000;
+const hostname = "0.0.0.0";
 
 const server: Application = new Application();
 
@@ -32,7 +31,7 @@ server.use(async (ctx, next) => {
   } else await next();
 });
 
-server.addEventListener("error", (err) => console.warn(err))
+server.addEventListener("error", (err) => console.warn(err));
 server.addEventListener("listen", () => {
   console.log(`server is listening on ${hostname}:${port}`);
 });
